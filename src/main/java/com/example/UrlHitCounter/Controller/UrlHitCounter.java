@@ -15,7 +15,7 @@ public class UrlHitCounter {
     @Autowired
     private UrlHitService hitService;
 
-    // http://localhost:8080/api/v1/visitor-counter-app/username/Tejas/count
+    // http://localhost:8080/api/v1/visitor-counter-app/username/Tejasvi/count
     @GetMapping("username/{username}/count")
     public UrlHit getCount(@PathVariable String username){
         UrlHit visit = hitService.getVisit(username);
